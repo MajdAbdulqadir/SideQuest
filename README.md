@@ -1,6 +1,9 @@
 # SideQuest
 
 
+SideQuest is no longer maintained here, this repo is obsolete and serves as an example only. 
+
+
 [Latest Download](https://sidequestvr.com/#/download) | [Discord](https://discord.gg/HNnDPSu) | [Patreon](https://www.patreon.com/TheExpanseVR) | [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=744A6C394Q8JG&source=url)
 
 ![Image](https://i.imgur.com/AlYMbTj.png)
