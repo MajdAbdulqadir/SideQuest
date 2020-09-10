@@ -121,6 +121,9 @@ public class InstalledAppsAdapter extends BaseAdapter
             {
                 launchIntent = context.getPackageManager().getLaunchIntentForPackage(packageName);
             }
+            launchIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+            launchIntent.setAction(Intent.ACTION_MAIN);
+            launchIntent.setFlags(0x10200000);
         }
 
         // Return the launchable intent

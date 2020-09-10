@@ -1,5 +1,6 @@
 package com.sidequest.launcher.tools;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -58,7 +59,7 @@ public class AppStarter
      * @param packageName Name of the apps package
      * @param isClickAction Indicates if this method is initiated by a click-action
      */
-    public static void startAppByPackageName(final Context context, String packageName, Boolean isClickAction, Boolean isStartupAction, Boolean isClearPreviousInstancesForced)
+    public static void startAppByPackageName(final Activity context, String packageName, Boolean isClickAction, Boolean isStartupAction, Boolean isClearPreviousInstancesForced)
     {
         try
         {
@@ -82,7 +83,7 @@ public class AppStarter
 
                     // Launch the intent
                     Log.d(AppStarter.class.getName(), "Starting launcher activity of package: " + packageName);
-                    context.startActivity(launchIntent);
+                    context.getApplication().startActivity(launchIntent);
                 }
             }
         }
